@@ -4,7 +4,7 @@ import { Box } from '@mui/material';
 const Gradients = ({}) => {
     return (
         <>
-        <Box sx={{ position: 'absolute', right: '-200px', top: '0' }}>
+        <Box sx={{ position: 'absolute', right: { xs: '-450px', md: '-200px' }, top: '0' }}>
             <svg width="800" height="502" fill="none" xmlns="http://www.w3.org/2000/svg" opacity="0.4">
                 <circle cx="400" cy="102" r="400" fill="url(#heroglow_paint0_radial)" fillOpacity=".6" />
                 <circle cx="209" cy="289" r="170" fill="url(#heroglow_paint1_radial)" fillOpacity=".4" />
@@ -20,7 +20,7 @@ const Gradients = ({}) => {
                 </defs>
             </svg>
         </Box>
-        <Box sx={{ position: 'absolute', right: { xs: '-50px', sm: '-80px' }, top: { xs: '450px', sm: '150px' } }}>
+        <Box sx={{ position: 'absolute', right: { xs: '-50px', sm: '-280px', md: '-80px' }, top: { xs: '450px', sm: '150px' } }}>
             <svg width="678" height="634" viewBox="0 0 678 634" fill="none" xmlns="http://www.w3.org/2000/svg" opacity="0.4">
                 
                     <circle cx="240" cy="394" r="240" fill="url(#piphoneill_paint0_radial)" fillOpacity=".4" />
