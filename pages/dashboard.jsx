@@ -1,6 +1,6 @@
 import AssetList from '@components/dashboard/AssetList';
 import GlassContainer from '@components/GlassContainer';
-import { Grid, Typography, TextField, Box, Button, Backdrop, CircularProgress } from '@mui/material';
+import { Grid, Typography, TextField, Box, Button, Backdrop, CircularProgress, Container } from '@mui/material';
 import React, { useState, useEffect, useContext } from 'react';
 import { VictoryArea, VictoryContainer, VictoryPie } from 'victory';
 import axios from 'axios';
@@ -190,8 +190,8 @@ const Dashboard = () => {
 			>
         		<CircularProgress color="inherit" />
       		</Backdrop>
-
-			<Grid container spacing={1} maxWidth='lg' alignItems="stretch" sx={{ pt: 4, mx: 'auto' }}>
+		<Container maxWidth='lg' sx={{ mx: 'auto' }}>
+			<Grid container spacing={1} alignItems="stretch" sx={{ pt: 4 }}>
 
 				<Grid item xs={12} md={6}>
 					<GlassContainer>
@@ -254,6 +254,7 @@ const Dashboard = () => {
 				</Grid>
 				
 			</Grid>
+		</Container>
 		</>
 	);
 };

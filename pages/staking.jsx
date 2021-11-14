@@ -4,7 +4,7 @@ import PageTitle from '@components/PageHeader';
 const Staking = () => {
   return (
     <>
-        <Container sx={{ maxWidth: '760px', mx: 'auto' }}>
+        <Container maxWidth="760px" sx={{ maxWidth: '760px', mx: 'auto' }}>
             <PageTitle 
                 title="Stake your ErgoPad Tokens"
                 subtitle="Connect your wallet and stake your tokens to receive staking rewards and opportunities to get into other project launches early."

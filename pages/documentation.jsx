@@ -4,7 +4,7 @@ import PageTitle from '@components/PageHeader';
 const Documentation = () => {
   return (
     <>
-        <Container sx={{ maxWidth: '760px', mx: 'auto' }}>
+        <Container maxWidth="760px" sx={{ maxWidth: '760px', mx: 'auto' }}>
             <PageTitle 
                 title="Read the docs"
                 subtitle="Everything you need to know about ErgoPad"

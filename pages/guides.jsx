@@ -4,7 +4,7 @@ import PageTitle from '@components/PageHeader';
 const Guides = () => {
   return (
     <>
-        <Container sx={{ maxWidth: '760px', mx: 'auto' }}>
+        <Container maxWidth="760px" sx={{ maxWidth: '760px', mx: 'auto' }}>
             <PageTitle 
                 title="Learn how to use our dApps"
                 subtitle="You can watch the videos or follow the guides and learn how our various dApps can be used"

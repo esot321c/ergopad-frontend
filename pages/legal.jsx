@@ -5,7 +5,7 @@ import MuiNextLink from '@components/MuiNextLink'
 const Legal = () => {
   return (
     <>
-        <Container sx={{ maxWidth: '760px', mx: 'auto' }}>
+        <Container maxWidth="760px" sx={{ maxWidth: '760px', mx: 'auto' }}>
             <PageTitle 
                 title="Legal Info"
                 subtitle="Details about the DAO and corporate structure behind Ergopad"

@@ -4,7 +4,7 @@ import PageTitle from '@components/PageHeader';
 const Faq = () => {
   return (
     <>
-        <Container sx={{ maxWidth: '760px', mx: 'auto' }}>
+        <Container maxWidth="760px" sx={{ maxWidth: '760px', mx: 'auto' }}>
             <PageTitle 
                 title="Frequently Asked Questions"
                 subtitle="If we get asked a question often, you'll find it answered here"

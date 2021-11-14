@@ -4,7 +4,7 @@ import PageTitle from '@components/PageHeader';
 const Terms = () => {
   return (
     <>
-        <Container sx={{ maxWidth: '760px', mx: 'auto' }}>
+        <Container maxWidth="760px" sx={{ maxWidth: '760px', mx: 'auto' }}>
             <PageTitle 
                 title="Terms and Conditions"
                 subtitle="When you use our website, the following legal terms and conditions apply"

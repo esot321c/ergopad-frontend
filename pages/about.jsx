@@ -5,7 +5,7 @@ import MuiNextLink from '@components/MuiNextLink'
 const About = () => {
   return (
     <>
-        <Container sx={{ maxWidth: '760px', mx: 'auto' }}>
+        <Container maxWidth="760px" sx={{ maxWidth: '760px', mx: 'auto' }}>
             <PageTitle 
                 title="About ErgoPad"
                 subtitle="Read about our team, our philosophy, and how we plan to proceed into the future"

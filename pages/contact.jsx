@@ -4,7 +4,7 @@ import PageTitle from '@components/PageHeader';
 const Contact = () => {
   return (
     <>
-        <Container sx={{ maxWidth: '760px', mx: 'auto' }}>
+        <Container maxWidth="760px" sx={{ maxWidth: '760px', mx: 'auto' }}>
             <PageTitle 
                 title="Get in touch with the ErgoPad team"
                 subtitle="We are always happy to answer your questions and consider any suggestions. "

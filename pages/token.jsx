@@ -4,7 +4,7 @@ import PageTitle from '@components/PageHeader';
 const Token = () => {
   return (
     <>
-        <Container sx={{ maxWidth: '760px', mx: 'auto' }}>
+        <Container maxWidth="760px" sx={{ maxWidth: '760px', mx: 'auto' }}>
             <PageTitle 
                 title="Tokenomics"
                 subtitle="The ErgoPad token will have a limited release"

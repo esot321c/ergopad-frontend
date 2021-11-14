@@ -4,7 +4,7 @@ import PageTitle from '@components/PageHeader';
 const PrivacyPolicy = () => {
   return (
     <>
-        <Container sx={{ maxWidth: '760px', mx: 'auto' }}>
+        <Container maxWidth="760px" sx={{ maxWidth: '760px', mx: 'auto' }}>
             <PageTitle 
                 title="Privacy Policy"
                 subtitle="We will never share your data"
