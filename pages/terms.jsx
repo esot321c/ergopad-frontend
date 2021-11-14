@@ -1,10 +1,10 @@
-import { Typography, Box, Divider } from '@mui/material';
+import { Typography, Container } from '@mui/material';
 import PageTitle from '@components/PageHeader';
 
 const Terms = () => {
   return (
     <>
-        <Box sx={{ maxWidth: '760px', mx: 'auto' }}>
+        <Container sx={{ maxWidth: '760px', mx: 'auto' }}>
             <PageTitle 
                 title="Terms and Conditions"
                 subtitle="When you use our website, the following legal terms and conditions apply"
@@ -26,7 +26,7 @@ const Terms = () => {
                 quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non 
                 numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
             </Typography>
-        </Box>
+        </Container>
     </>
   );
 };

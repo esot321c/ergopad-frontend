@@ -1,11 +1,11 @@
-import { Typography, Box, Divider } from '@mui/material';
+import { Typography, Container } from '@mui/material';
 import PageTitle from '@components/PageHeader';
 import MuiNextLink from '@components/MuiNextLink'
 
 const Legal = () => {
   return (
     <>
-        <Box sx={{ maxWidth: '760px', mx: 'auto' }}>
+        <Container sx={{ maxWidth: '760px', mx: 'auto' }}>
             <PageTitle 
                 title="Legal Info"
                 subtitle="Details about the DAO and corporate structure behind Ergopad"
@@ -46,7 +46,7 @@ const Legal = () => {
                 and no government should be able to stop you from investing your crypto in whatever you wish, 
                 but with those freedoms come inherent risks. 
             </Typography>
-        </Box>
+        </Container>
     </>
   );
 };

@@ -1,10 +1,10 @@
-import { Typography, Box, Divider } from '@mui/material';
+import { Typography, Container } from '@mui/material';
 import PageTitle from '@components/PageHeader';
 
 const Guides = () => {
   return (
     <>
-        <Box sx={{ maxWidth: '760px', mx: 'auto' }}>
+        <Container sx={{ maxWidth: '760px', mx: 'auto' }}>
             <PageTitle 
                 title="Learn how to use our dApps"
                 subtitle="You can watch the videos or follow the guides and learn how our various dApps can be used"
@@ -26,7 +26,7 @@ const Guides = () => {
                 quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non 
                 numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
             </Typography>
-        </Box>
+        </Container>
     </>
   );
 };

@@ -1,11 +1,11 @@
-import { Typography, Box, Divider } from '@mui/material';
+import { Typography, Container } from '@mui/material';
 import PageTitle from '@components/PageHeader';
 import MuiNextLink from '@components/MuiNextLink'
 
 const About = () => {
   return (
     <>
-        <Box sx={{ maxWidth: '760px', mx: 'auto' }}>
+        <Container sx={{ maxWidth: '760px', mx: 'auto' }}>
             <PageTitle 
                 title="About ErgoPad"
                 subtitle="Read about our team, our philosophy, and how we plan to proceed into the future"
@@ -67,7 +67,7 @@ const About = () => {
             <Typography variant="p">
                 That is what we'd like to build. We'd love to have you join us on this journey! 
             </Typography>
-        </Box>
+        </Container>
     </>
   );
 };

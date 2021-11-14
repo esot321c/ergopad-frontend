@@ -1,10 +1,10 @@
-import { Typography, Box, Divider } from '@mui/material';
+import { Typography, Container } from '@mui/material';
 import PageTitle from '@components/PageHeader';
 
 const PrivacyPolicy = () => {
   return (
     <>
-        <Box sx={{ maxWidth: '760px', mx: 'auto' }}>
+        <Container sx={{ maxWidth: '760px', mx: 'auto' }}>
             <PageTitle 
                 title="Privacy Policy"
                 subtitle="We will never share your data"
@@ -26,7 +26,7 @@ const PrivacyPolicy = () => {
                 quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non 
                 numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
             </Typography>
-        </Box>
+        </Container>
     </>
   );
 };

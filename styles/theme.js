@@ -6,10 +6,10 @@ let theme = createTheme({
   palette: {
     mode: 'dark',
     primary: {
-      main: 'rgb(244, 244, 245)',
+      main: 'rgb(58, 186, 180)',
     },
     secondary: {
-      main: 'rgb(162, 162, 168)',
+      main: 'rgb(181, 132, 247)',
     },
     background: {
       paper: 'rgba(46, 46, 51)',
