@@ -41,4 +41,8 @@ const Gradients = ({}) => {
     );
 };
 
+<<<<<<< HEAD
 export default Gradients;
+=======
+export default Gradients;
+>>>>>>> 791e4dcbf4cd16420d287c5106e4dacade942115

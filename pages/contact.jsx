@@ -1,14 +1,29 @@
 import { Typography, Box, Divider } from '@mui/material';
+<<<<<<< HEAD
 import PageTitle from '@components/PageHeader';
+=======
+>>>>>>> 791e4dcbf4cd16420d287c5106e4dacade942115
 
 const Contact = () => {
   return (
     <>
         <Box sx={{ maxWidth: '760px', mx: 'auto' }}>
+<<<<<<< HEAD
             <PageTitle 
                 title="Get in touch with the ErgoPad team"
                 subtitle="We are always happy to answer your questions and consider any suggestions. "
             />
+=======
+            <Box sx={{ mt: '5rem'}}>
+                <Typography variant="h1">
+                    Get in touch with the ErgoPad team
+                </Typography>
+                <Typography variant="subtitle1">
+                    We are always happy to answer your questions and consider any suggestions. Get in touch with the form below. 
+                </Typography>
+                <Divider sx={{ width: '2rem' }} />
+            </Box>
+>>>>>>> 791e4dcbf4cd16420d287c5106e4dacade942115
             
             <Typography variant="p">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 

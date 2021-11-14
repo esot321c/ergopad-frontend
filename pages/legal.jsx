@@ -1,11 +1,15 @@
 import { Typography, Box, Divider } from '@mui/material';
+<<<<<<< HEAD
 import PageTitle from '@components/PageHeader';
 import MuiNextLink from '@components/MuiNextLink'
+=======
+>>>>>>> 791e4dcbf4cd16420d287c5106e4dacade942115
 
 const Legal = () => {
   return (
     <>
         <Box sx={{ maxWidth: '760px', mx: 'auto' }}>
+<<<<<<< HEAD
             <PageTitle 
                 title="Legal Info"
                 subtitle="Details about the DAO and corporate structure behind Ergopad"
@@ -45,6 +49,33 @@ const Legal = () => {
                 The team believes that everyone should have the right to have full control of their finances 
                 and no government should be able to stop you from investing your crypto in whatever you wish, 
                 but with those freedoms come inherent risks. 
+=======
+            <Box sx={{ mt: '5rem'}}>
+                <Typography variant="h1">
+                    Legal Info
+                </Typography>
+                <Typography variant="subtitle1">
+                    Details about the DAO and corporate structure behind Ergopad
+                </Typography>
+                <Divider sx={{ width: '2rem' }} />
+            </Box>
+            
+            <Typography variant="p">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
+                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt 
+                in culpa qui officia deserunt mollit anim id est laborum.
+            </Typography>
+
+            <Typography variant="p">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+                totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
+                dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
+                sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro 
+                quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non 
+                numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
+>>>>>>> 791e4dcbf4cd16420d287c5106e4dacade942115
             </Typography>
         </Box>
     </>

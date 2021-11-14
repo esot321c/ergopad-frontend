@@ -190,8 +190,12 @@ const Dashboard = () => {
 			>
         		<CircularProgress color="inherit" />
       		</Backdrop>
+<<<<<<< HEAD
 
 			<Grid container spacing={1} maxWidth='lg' alignItems="stretch" sx={{ pt: 4, mx: 'auto' }}>
+=======
+			<Grid container spacing={1} alignItems="stretch" sx={{ pt: 4 }}>
+>>>>>>> 791e4dcbf4cd16420d287c5106e4dacade942115
 
 				<Grid item xs={12} md={6}>
 					<GlassContainer>

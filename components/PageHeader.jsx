@@ -2,7 +2,7 @@ import { Typography, Box, Divider }  from '@mui/material';
 
 const PageTitle = ({ title, subtitle }) => {
     return (
-        <Box sx={{ mt: '5rem'}}>
+        <Box sx={{ mt: '5rem' }}>
             <Typography variant="h1">
                 {title}
             </Typography>

@@ -6,7 +6,11 @@ let theme = createTheme({
   palette: {
     mode: 'dark',
     primary: {
+<<<<<<< HEAD
       main: 'rgb(244, 244, 245)',
+=======
+      main: 'rgb(57, 186, 181)',
+>>>>>>> 791e4dcbf4cd16420d287c5106e4dacade942115
     },
     secondary: {
       main: 'rgb(162, 162, 168)',
@@ -63,18 +67,30 @@ theme.typography.h2 = {
 
 theme.typography.h3 = {
   color: theme.palette.text.primary,
+<<<<<<< HEAD
   // letterSpacing: '.02em',
   fontSize: '1.63rem',
   marginBottom: '1rem',
   fontFamily: 'Red Hat Display, sans-serif',
   fontWeight: '700',
+=======
+  letterSpacing: '-.02em',
+  fontFamily: 'Red Hat Display, sans-serif',
+  fontWeight: '800',
+>>>>>>> 791e4dcbf4cd16420d287c5106e4dacade942115
 };
 
 theme.typography.h4 = {
   color: theme.palette.text.primary,
+<<<<<<< HEAD
   // letterSpacing: '-.02em',
   fontFamily: 'Red Hat Display, sans-serif',
   fontWeight: '700',
+=======
+  letterSpacing: '-.02em',
+  fontFamily: 'Red Hat Display, sans-serif',
+  fontWeight: '800',
+>>>>>>> 791e4dcbf4cd16420d287c5106e4dacade942115
 };
 
 theme.typography.h5 = {
@@ -103,7 +119,11 @@ theme.typography.subtitle1 = {
 theme.typography.p = {
   color: theme.palette.text.secondary,
   fontSize: '1.125rem',
+<<<<<<< HEAD
   marginBottom: '2rem',
+=======
+  marginTop: '2rem',
+>>>>>>> 791e4dcbf4cd16420d287c5106e4dacade942115
   display: 'block'
 }
     

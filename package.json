@@ -3,7 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+<<<<<<< HEAD
     "dev": "next dev",
+=======
+    "bak": "next dev",
+    "dev": "next-remote-watch",
+>>>>>>> 791e4dcbf4cd16420d287c5106e4dacade942115
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -16,6 +21,7 @@
     "@mui/icons-material": "latest",
     "@mui/material": "^5.0.2",
     "@reduxjs/toolkit": "^1.6.1",
+<<<<<<< HEAD
     "axios": "0.24.0",
     "blakejs": "^1.1.0",
     "bn.js": "^4.11.8",
@@ -25,19 +31,40 @@
     "http-proxy": "^1.18.1",
     "moment": "^2.29.1",
     "next": "^12.0.3",
+=======
+    "axios": "^0.21.4",
+    "clsx": "^1.1.1",
+    "framer-motion": "^4.1.17",
+    "http-proxy": "^1.18.1",
+    "moment": "^2.29.1",
+    "next": "^11.1.2",
+    "next-redux-wrapper": "^7.0.5",
+>>>>>>> 791e4dcbf4cd16420d287c5106e4dacade942115
     "notistack": "^2.0.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-hook-form": "^7.17.1",
+<<<<<<< HEAD
+=======
+    "react-redux": "^7.2.5",
+    "redux": "^4.1.1",
+    "redux-thunk": "^2.3.0",
+>>>>>>> 791e4dcbf4cd16420d287c5106e4dacade942115
     "victory": "^36.0.1",
     "yarn": "^1.22.17"
   },
   "devDependencies": {
+<<<<<<< HEAD
     "@types/node": "^16.11.7",
     "@types/react": "^17.0.34",
     "eslint": "7.32.0",
     "eslint-config-next": "11.1.2",
     "eslint-plugin-react-hooks": "^4.2.0",
     "typescript": "^4.4.4"
+=======
+    "eslint": "7.32.0",
+    "eslint-config-next": "11.1.2",
+    "eslint-plugin-react-hooks": "^4.2.0"
+>>>>>>> 791e4dcbf4cd16420d287c5106e4dacade942115
   }
 }

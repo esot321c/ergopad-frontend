@@ -1,14 +1,29 @@
 import { Typography, Box, Divider } from '@mui/material';
+<<<<<<< HEAD
 import PageTitle from '@components/PageHeader';
+=======
+>>>>>>> 791e4dcbf4cd16420d287c5106e4dacade942115
 
 const Staking = () => {
   return (
     <>
         <Box sx={{ maxWidth: '760px', mx: 'auto' }}>
+<<<<<<< HEAD
             <PageTitle 
                 title="Stake your ErgoPad Tokens"
                 subtitle="Connect your wallet and stake your tokens to receive staking rewards and opportunities to get into other project launches early."
             />
+=======
+            <Box sx={{ mt: '5rem'}}>
+                <Typography variant="h1">
+                    Stake your ErgoPad Tokens
+                </Typography>
+                <Typography variant="subtitle1">
+                    Connect your wallet and stake your tokens to receive staking rewards and opportunities to get into other project launches early. 
+                </Typography>
+                <Divider sx={{ width: '2rem' }} />
+            </Box>
+>>>>>>> 791e4dcbf4cd16420d287c5106e4dacade942115
             
             <Typography variant="p">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 

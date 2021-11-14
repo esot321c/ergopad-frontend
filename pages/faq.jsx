@@ -1,14 +1,29 @@
 import { Typography, Box, Divider } from '@mui/material';
+<<<<<<< HEAD
 import PageTitle from '@components/PageHeader';
+=======
+>>>>>>> 791e4dcbf4cd16420d287c5106e4dacade942115
 
 const Faq = () => {
   return (
     <>
         <Box sx={{ maxWidth: '760px', mx: 'auto' }}>
+<<<<<<< HEAD
             <PageTitle 
                 title="Frequently Asked Questions"
                 subtitle="If we get asked a question often, you'll find it answered here"
             />
+=======
+            <Box sx={{ mt: '5rem'}}>
+                <Typography variant="h1">
+                    ErgoPad FAQ
+                </Typography>
+                <Typography variant="subtitle1">
+                    If we get asked a question often, you'll find it answered here
+                </Typography>
+                <Divider sx={{ width: '2rem' }} />
+            </Box>
+>>>>>>> 791e4dcbf4cd16420d287c5106e4dacade942115
             
             <Typography variant="p">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
