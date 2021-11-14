@@ -1,29 +1,14 @@
 import { Typography, Box, Divider } from '@mui/material';
-<<<<<<< HEAD
 import PageTitle from '@components/PageHeader';
-=======
->>>>>>> 791e4dcbf4cd16420d287c5106e4dacade942115
 
 const Terms = () => {
   return (
     <>
         <Box sx={{ maxWidth: '760px', mx: 'auto' }}>
-<<<<<<< HEAD
             <PageTitle 
                 title="Terms and Conditions"
                 subtitle="When you use our website, the following legal terms and conditions apply"
             />
-=======
-            <Box sx={{ mt: '5rem'}}>
-                <Typography variant="h1">
-                    Terms and Conditions
-                </Typography>
-                <Typography variant="subtitle1">
-                    When you use our website, the following legal terms and conditions apply
-                </Typography>
-                <Divider sx={{ width: '2rem' }} />
-            </Box>
->>>>>>> 791e4dcbf4cd16420d287c5106e4dacade942115
             
             <Typography variant="p">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 

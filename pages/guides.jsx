@@ -1,29 +1,14 @@
 import { Typography, Box, Divider } from '@mui/material';
-<<<<<<< HEAD
 import PageTitle from '@components/PageHeader';
-=======
->>>>>>> 791e4dcbf4cd16420d287c5106e4dacade942115
 
 const Guides = () => {
   return (
     <>
         <Box sx={{ maxWidth: '760px', mx: 'auto' }}>
-<<<<<<< HEAD
             <PageTitle 
                 title="Learn how to use our dApps"
                 subtitle="You can watch the videos or follow the guides and learn how our various dApps can be used"
             />
-=======
-            <Box sx={{ mt: '5rem'}}>
-                <Typography variant="h1">
-                    Learn how to use our dApps
-                </Typography>
-                <Typography variant="subtitle1">
-                    You can watch the videos or follow the guides and learn how our various dApps can be used
-                </Typography>
-                <Divider sx={{ width: '2rem' }} />
-            </Box>
->>>>>>> 791e4dcbf4cd16420d287c5106e4dacade942115
             
             <Typography variant="p">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 

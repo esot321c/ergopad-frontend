@@ -5,7 +5,6 @@ import {
   HomeOutlined,
   MenuOutlined
 } from '@mui/icons-material';
-<<<<<<< HEAD
 import { 
   Drawer, 
   Typography, 
@@ -20,16 +19,6 @@ import MuiNextLink from '@components/MuiNextLink';
 
 const drawerLinks = [
   { title: 'About', path: '/about' },
-=======
-import { Drawer, Typography, Box, BottomNavigation, BottomNavigationAction } from '@mui/material';
-import { useRouter } from 'next/router';
-import { useState } from 'react';
-import MuiNextLink from '@components/MuiNextLink';
-
-const drawerLinks = [
-  { title: `About`, path: `/about` },
-  { title: 'Legal', path: '/legal' },
->>>>>>> 791e4dcbf4cd16420d287c5106e4dacade942115
   { title: 'Contact', path: '/contact' },
   { title: 'Documentation', path: '/documentation' },
   { title: 'Tutorials', path: '/guides' },
@@ -60,7 +49,6 @@ const bottomNavLinks = [
   },
 ];
 
-<<<<<<< HEAD
 const root = { 
   position: 'fixed', 
   bottom: 0, 
@@ -68,9 +56,6 @@ const root = {
   right: 0, 
   zIndex: 1
  };
-=======
-const root = { position: 'fixed', bottom: 0, left: 0, right: 0, zIndex: 1 };
->>>>>>> 791e4dcbf4cd16420d287c5106e4dacade942115
 
 const BottomNav = () => {
   const router = useRouter();
@@ -78,19 +63,12 @@ const BottomNav = () => {
     left: false,
   });
   const [value, setValue] = useState(router.pathname);
-<<<<<<< HEAD
 
   const handleChange = (_, newValue) => {
     if (newValue != 'more') {
       setValue(newValue);
       router.push(newValue);
     }
-=======
-  
-  const handleChange = (_, newValue) => {
-    setValue(newValue);
-    router.push(newValue);
->>>>>>> 791e4dcbf4cd16420d287c5106e4dacade942115
   };
 
   const toggleDrawer = (anchor, open) => (event) => {
@@ -104,7 +82,6 @@ const BottomNav = () => {
     setState({ ...state, [anchor]: open });
   };
 
-<<<<<<< HEAD
   useEffect(() => {
     if (router.pathname != value) {
       setValue('more')
@@ -118,8 +95,6 @@ const BottomNav = () => {
     
   }, [router.pathname])
 
-=======
->>>>>>> 791e4dcbf4cd16420d287c5106e4dacade942115
   const list = (anchor) => (
     <Box
       sx={{ width: 250, marginTop: `auto`, marginBottom: `auto` }}
@@ -145,7 +120,6 @@ const BottomNav = () => {
 
   return (
     <>
-<<<<<<< HEAD
     <Paper sx={root} elevation={6}>
       <BottomNavigation showLabels value={value} sx={{ height: '4rem', background: 'linear-gradient(0deg, rgba(29,29,32,1) 0%, rgba(40,40,45,1) 70%)' }} onChange={handleChange}>
         {bottomNavLinks.map((link, i) => (
@@ -165,25 +139,6 @@ const BottomNav = () => {
           />
       </BottomNavigation> 
     </Paper>
-=======
-    <BottomNavigation showLabels value={value} sx={root} onChange={handleChange}>
-      {bottomNavLinks.map((link, i) => (
-          <BottomNavigationAction
-            key={`${i}_${link.label}`}
-            label={link.label}
-            value={link.link}
-            icon={link.icon}
-          />
-      ))}
-      <BottomNavigationAction
-          onClick={toggleDrawer("left", true)}
-          key='more'
-          label='More'
-          value=''
-          icon={<MenuOutlined />}
-        />
-    </BottomNavigation> 
->>>>>>> 791e4dcbf4cd16420d287c5106e4dacade942115
 
     <Drawer
         anchor="left"

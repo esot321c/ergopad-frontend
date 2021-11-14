@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { useState, useEffect } from "react";
 import { 
     Button, 
@@ -13,11 +12,6 @@ import {
 // import FormControl, { useFormControl } from '@mui/material/FormControl';
 import { useWallet } from 'utils/WalletContext';
 import { Address } from "utils/Address";
-=======
-import { useState, useContext, useEffect } from "react";
-import { Button, Dialog, TextField, DialogActions, DialogContent, DialogContentText, DialogTitle } from '@mui/material';
-import { useWallet } from 'utils/WalletContext'
->>>>>>> 791e4dcbf4cd16420d287c5106e4dacade942115
 
 export const AddWallet = ({ children }) => {
     const [walletInput, setWalletInput] = useState('');
@@ -41,28 +35,16 @@ export const AddWallet = ({ children }) => {
 
     const handleSubmitWallet = () => {
         // console.log('wallet input = ' + walletInput)
-<<<<<<< HEAD
         setOpen(false);
         localStorage.setItem('Address', walletInput);
         setWalletButtonText(walletInput)
         setWallet({wallets: walletInput})
-=======
-        localStorage.setItem('Address', walletInput);
-        setWalletButtonText(walletInput)
-        setWallet({wallets: walletInput})
-        setOpen(false);
->>>>>>> 791e4dcbf4cd16420d287c5106e4dacade942115
         setWalletInput('');
     };
 
     const clearWallet = () => {
-<<<<<<< HEAD
         // setOpen(false);
         setWallet({wallets: ''})
-=======
-        setWallet({wallets: ''})
-        setOpen(false);
->>>>>>> 791e4dcbf4cd16420d287c5106e4dacade942115
         localStorage.removeItem('Address');
         setWalletButtonText('Connect Wallet');
         // console.log(wallet.wallets)
@@ -122,31 +104,22 @@ export const AddWallet = ({ children }) => {
                 variant="standard"
                 value={walletInput}
                 onChange={handleWalletFormChange}
-<<<<<<< HEAD
                 error={!isAddressValid(walletInput)}
             />
             <FormHelperText error={true}>
                 {!isAddressValid(walletInput) ? 'Invalid ergo address.' : ''}
             </FormHelperText>
-=======
-            />
->>>>>>> 791e4dcbf4cd16420d287c5106e4dacade942115
             </DialogContent>
             <DialogActions sx={{ justifyContent: 'space-between' }}>
                 <Button onClick={ () => clearWallet() }>Remove wallet</Button>
                 <Button onClick={handleClose}>Close Window</Button>
-<<<<<<< HEAD
                 <Button onClick={handleSubmitWallet} disabled={!isAddressValid(walletInput)}>Connect wallet</Button>
-=======
-                <Button onClick={handleSubmitWallet}>Connect wallet</Button>
->>>>>>> 791e4dcbf4cd16420d287c5106e4dacade942115
             </DialogActions>
         </Dialog>
     </>
   );
 };
 
-<<<<<<< HEAD
 function isAddressValid(address) {
     try {
         return (new Address(address).isValid())
@@ -155,6 +128,4 @@ function isAddressValid(address) {
     }
 }
 
-=======
->>>>>>> 791e4dcbf4cd16420d287c5106e4dacade942115
 export default AddWallet;
