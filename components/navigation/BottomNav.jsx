@@ -19,7 +19,8 @@ import MuiNextLink from '@components/MuiNextLink';
 
 const drawerLinks = [
   { title: 'About', path: '/about' },
-  { title: 'Contact', path: '/contact' },
+  { title: 'Projects', path: '/projects' },
+  { title: 'Apply for IDO', path: '/apply' },
   { title: 'Documentation', path: '/documentation' },
   { title: 'Tutorials', path: '/guides' },
   { title: 'FAQ', path: '/faq' },
@@ -89,7 +90,7 @@ const BottomNav = () => {
     bottomNavLinks.forEach((obj) => {
       if (router.pathname == obj.link) {
         setValue(obj.link)
-        console.log(router.pathname + ' == ' + obj.link)
+        // console.log(router.pathname + ' == ' + obj.link)
       }
     })
     

@@ -12,6 +12,7 @@ import {
 // import FormControl, { useFormControl } from '@mui/material/FormControl';
 import { useWallet } from 'utils/WalletContext';
 import { Address } from "utils/Address";
+import theme from "../styles/theme";
 
 export const AddWallet = ({ children }) => {
     const [walletInput, setWalletInput] = useState('');
@@ -71,13 +72,13 @@ export const AddWallet = ({ children }) => {
             fontSize: '1rem',
             px: '1.2rem',
             textTransform: 'none',
-            backgroundColor: '#3ABAB4',
+            backgroundColor: theme.palette.primary.main,
             '&:hover': {
-                backgroundColor: '#4BD0C9',
+                backgroundColor: theme.palette.primary.hover,
                 boxShadow: 'none',
             },
             '&:active': {
-                backgroundColor: '#3ABAB496',
+                backgroundColor: theme.palette.primary.active,
             },
             textOverflow: 'ellipsis',
             maxWidth: '10em',

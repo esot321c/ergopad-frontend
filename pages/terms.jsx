@@ -1,5 +1,5 @@
 import { Typography, Container } from '@mui/material';
-import PageTitle from '@components/PageHeader';
+import PageTitle from '@components/PageTitle';
 
 const Terms = () => {
   return (

@@ -39,9 +39,9 @@ const Layout = ({ children }) => {
           exit='hidden' */
         >
 
-      <Box maxWidth='lg' sx={{ position: 'relative', mx: 'auto', height: '0', pointerEvents: 'none', zIndex: '-100' }} aria-hidden="true">
+     {/*  <Box maxWidth='lg' sx={{ position: 'relative', mx: 'auto', height: '0', pointerEvents: 'none', zIndex: '-100' }} aria-hidden="true">
         <Gradients />
-      </Box>
+      </Box> */}
       
       <Container maxWidth='lg'>
         <Header />

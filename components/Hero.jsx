@@ -1,7 +1,14 @@
-import { Grid, Typography, Button, Box }  from '@mui/material';
+import { Grid, Typography, Button, Box, Image }  from '@mui/material';
+import LowerGradients from '@components/stylistic/LowerGradients';
+import theme from '../styles/theme';
 
 const Hero = ({ title, subtitle }) => {
   return (
+    <>
+    {/* <Box maxWidth='lg' sx={{ position: 'relative', mx: 'auto', height: '0', pointerEvents: 'none', zIndex: '-100' }} aria-hidden="true">
+      <LowerGradients />
+    </Box> */}
+
     <Grid container spacing={2} sx={{ pt: 10 }}>
       <Grid item xs={12} sm={7} sx={{ mb: 8 }}>
         <Typography variant='h1'>{title}</Typography>
@@ -27,13 +34,13 @@ const Hero = ({ title, subtitle }) => {
                 px: '1.2rem',
                 mr: '1.7rem',
                 textTransform: 'none',
-                backgroundColor: '#3ABAB4',
+                backgroundColor: theme.palette.primary.main,
                 '&:hover': {
-                  backgroundColor: '#4BD0C9',
+                  backgroundColor: theme.palette.primary.hover,
                   boxShadow: 'none',
                 },
                 '&:active': {
-                  backgroundColor: '#3ABAB496',
+                  backgroundColor: theme.palette.primary.active,
                 },
               }}
             >
@@ -50,13 +57,13 @@ const Hero = ({ title, subtitle }) => {
                 py: '0.6rem',
                 px: '1.2rem',
                 textTransform: 'none',
-                backgroundColor: '#9f7aea',
+                backgroundColor: theme.palette.secondary.main,
                 '&:hover': {
-                  backgroundColor: '#B886F9',
+                  backgroundColor: theme.palette.secondary.hover,
                   boxShadow: 'none',
                 },
                 '&:active': {
-                  backgroundColor: '#A88CE3',
+                  backgroundColor: theme.palette.secondary.active,
                 },
 
               }}
@@ -67,8 +74,11 @@ const Hero = ({ title, subtitle }) => {
         </Box>
 
       </Grid>
-      <Grid item xs={12} sm={5}></Grid>
+      <Grid item xs={12} sm={5}>
+        
+      </Grid>
     </Grid>
+    </>
   );
 };
 

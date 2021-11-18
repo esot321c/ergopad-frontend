@@ -22,7 +22,7 @@ const BackgroundSVG = styled('svg')(({ theme }) => ({
 const Footer = () => {
 	return (
 		<>
-			{/* Footer illustration */}
+			{/* Footer illustration 
 			<BackgroundContainer aria-hidden="true" variant='inherit'>
 					<BackgroundSVG fill="none" xmlns="http://www.w3.org/2000/svg" opacity="0.4">
 							<circle cx="400" cy="400" r="400" fill="url(#footerglow_paint0_radial)" fillOpacity=".4" />
@@ -33,7 +33,7 @@ const Footer = () => {
 								</radialGradient>
 							</defs>
 					</BackgroundSVG>
-			</BackgroundContainer>
+			</BackgroundContainer>*/}
 
 			<Divider sx={{ mt: 6, mb: 6 }} />
 
@@ -57,7 +57,7 @@ const Footer = () => {
 							</MuiNextLink>
 				</Grid>
 				<Grid item xs={6} md={2}>
-					<Typography variant='inherit' sx={titleStyles}>COMPANY</Typography>
+					<Typography variant='inherit' sx={titleStyles}>ERGOPAD</Typography>
 					<List>
 						<ListItem disableGutters sx={listItemStyles}>
 							<Link activeClassName='active' href='/about' sx={linkStyles}>
@@ -65,13 +65,23 @@ const Footer = () => {
 							</Link>
 						</ListItem>
 						<ListItem disableGutters sx={listItemStyles}>
-							<Link activeClassName='active' href='/legal' sx={linkStyles}>
-								Legal
+							<Link activeClassName='active' href='/projects' sx={linkStyles}>
+								Projects
 							</Link>
 						</ListItem>
 						<ListItem disableGutters sx={listItemStyles}>
-							<Link activeClassName='active' href='/contact' sx={linkStyles}>
-								Contact
+							<Link activeClassName='active' href='/token' sx={linkStyles}>
+								Token
+							</Link>
+						</ListItem>
+						<ListItem disableGutters sx={listItemStyles}>
+							<Link activeClassName='active' href='/staking' sx={linkStyles}>
+								Staking
+							</Link>
+						</ListItem>
+						<ListItem disableGutters sx={listItemStyles}>
+							<Link activeClassName='active' href='/legal' sx={linkStyles}>
+								Legal
 							</Link>
 						</ListItem>
 					</List>
@@ -95,8 +105,8 @@ const Footer = () => {
 							</Link>
 						</ListItem>
 						<ListItem disableGutters sx={listItemStyles}>
-							<Link activeClassName='active' href='https://github.com/ergo-pad' sx={linkStyles}>
-								Open Source
+							<Link activeClassName='active' href='/apply' sx={linkStyles}>
+								Apply
 							</Link>
 						</ListItem>
 					</List>
@@ -119,10 +129,15 @@ const Footer = () => {
 								Discord
 							</Link>
 						</ListItem>
+						<ListItem disableGutters sx={listItemStyles}>
+							<Link activeClassName='active' href='https://github.com/ergo-pad' sx={linkStyles}>
+								Github
+							</Link>
+						</ListItem>
 					</List>
 				</Grid>
 				<Grid item xs={6} md={2}>
-					<Typography variant='inherit' sx={titleStyles}>ERGO RESOURCES</Typography>
+					<Typography variant='inherit' sx={titleStyles}>RESOURCES</Typography>
 					<List>
 						<ListItem disableGutters sx={listItemStyles}>
 							<Link activeClassName='active' href='https://ergoplatform.org/en/' sx={linkStyles} target='_blank'>
@@ -217,7 +232,7 @@ const Footer = () => {
 
 const titleStyles = {
 	'& span': {
-		color: (theme) => theme.palette.primary.primary,
+		color: (theme) => theme.palette.text.primary,
 	},
 	fontWeight: 'normal',
 	fontSize: 14,
