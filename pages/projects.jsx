@@ -43,7 +43,7 @@ const relatedLinkList = [
 const Projects = () => {
   return (
     <>
-        <Container sx={{ mt: '5rem', mb: '3rem' }}>
+        <Container sx={{ mb: '3rem' }}>
             <CenterTitle 
                 title="ErgoPad Projects"
                 subtitle="Building the future of the Ergo ecosystem"

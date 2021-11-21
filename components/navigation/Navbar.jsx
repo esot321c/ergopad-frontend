@@ -6,7 +6,7 @@ const Navbar = ({ navLinks }) => {
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
   return (
     
-      <Stack direction='row' spacing={4} sx={{ display: 'flex', alignItems: 'center', flexGrow: 1, height: '5rem', py: 'auto' }}>
+      <Stack direction='row' spacing={4} sx={{ display: 'flex', alignItems: 'center', flexGrow: 1 }}>
         {!isMobile && (
           <>
             {navLinks.map(({ title, path }, i) => (
