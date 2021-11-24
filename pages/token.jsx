@@ -123,10 +123,11 @@ const Token = () => {
 
   return (
     <>
-        <Container maxWidth="lg" sx={{ mt: '5rem', mb: '3rem' }}>
+        <Container maxWidth="lg" sx={{ mb: '3rem' }}>
             <CenterTitle 
                 title="Tokenomics"
                 subtitle="The ErgoPad tokenomics and uses"
+                main={true}
             />
 
 
@@ -220,13 +221,13 @@ const Token = () => {
                         aria-controls="panel1bh-content"
                         id="panel1bh-header"
                         >
-                        <Typography variant="h5" sx={{ width: '33%', flexShrink: 0 }}>
+                        <Typography variant="h5" sx={{ width: '33%', flexShrink: 0, mb: 0 }}>
                             Governance
                         </Typography>
                         </AccordionSummary>
                         <AccordionDetails>
                         <Typography variant="p">
-                            Your tokens will give you a vote on DAO decisions, which will be outlined in more detail shortly. 
+                            Your tokens will give you a vote on certain decisions, such as which projects are launched on ErgoPad. 
                         </Typography>
                         </AccordionDetails>
                     </Accordion>
@@ -236,7 +237,7 @@ const Token = () => {
                         aria-controls="panel2bh-content"
                         id="panel2bh-header"
                         >
-                            <Typography variant="h5" sx={{ width: '33%', flexShrink: 0 }}>
+                            <Typography variant="h5" sx={{ width: '33%', flexShrink: 0, mb: 0 }}>
                                 Staking
                             </Typography>
                         </AccordionSummary>
@@ -261,7 +262,7 @@ const Token = () => {
                         aria-controls="panel3bh-content"
                         id="panel3bh-header"
                         >
-                        <Typography variant="h5" sx={{ width: '33%', flexShrink: 0 }}>
+                        <Typography variant="h5" sx={{ width: '33%', flexShrink: 0, mb: 0 }}>
                             Deflationary Mechanics
                         </Typography>
                         </AccordionSummary>
@@ -277,13 +278,13 @@ const Token = () => {
                         aria-controls="panel4bh-content"
                         id="panel4bh-header"
                         >
-                        <Typography variant="h5" sx={{ width: '33%', flexShrink: 0 }}>
+                        <Typography variant="h5" sx={{ width: '33%', flexShrink: 0, mb: 0 }}>
                             Liqudity Farming
                         </Typography>
                         </AccordionSummary>
                         <AccordionDetails>
                         <Typography variant="p">
-                            If you aren't interested in investing in IDOs and feel liquidity farming will provide a greater yield than the current staking rewards, you can provide liquidity on ErgoDex
+                            If you aren't interested in investing in IDOs and feel liquidity farming will provide a greater yield than the current staking rewards, you can provide liquidity on ErgoDex. We may even release a dex of our own!
                         </Typography>
                         </AccordionDetails>
                     </Accordion>
