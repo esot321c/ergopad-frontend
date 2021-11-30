@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   padding: 0;
@@ -11,7 +15,17 @@ body {
 }
 
 #__next {
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
+}
+
+/* 
+use in conjunction with body and __next attributs
+ref: https://stackoverflow.com/questions/68362273/remove-smooth-scroll-animation-on-changing-page-in-nextjs-with-link-component
+*/
+a:link { 
+  scroll-behavior: auto!important;
 }
 
 a {

@@ -7,6 +7,7 @@ import { cloneElement } from 'react';
 
 export const navLinks = [
   { title: `About`, path: `/about` },
+  { title: 'Road Map', path: '/#roadmap'},
   { title: `Projects`, path: `/projects` },
   { title: `Token`, path: `/token` },
   { title: `Staking`, path: `/staking` },

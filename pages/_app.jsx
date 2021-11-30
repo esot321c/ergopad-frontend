@@ -1,4 +1,4 @@
-import type { AppProps /*, AppContext */ } from 'next/app'
+// import type { AppProps /*, AppContext */ } from 'next/app'
 import Head from 'next/head';
 import { ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -10,12 +10,24 @@ import Layout from '@components/layout/Layout';
 import { SnackbarProvider } from 'notistack';
 import { WalletProvider } from '../utils/WalletContext';
 import { SearchProvider } from '../utils/SearchContext';
+import { AnimatePresence, motion } from "framer-motion";
+import { useRouter } from 'next/router';
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache();
 
-function MyApp({ Component, pageProps }: AppProps)  {
+const exitCompleter = () => {
+	if (typeof window !== 'undefined') {
+		window.scrollTo({top: 0, left: 0, behavior: 'instant'})
+	}
+}
+
+function MyApp({ Component, pageProps }) {
+
 	const emotionCache = clientSideEmotionCache;
+	const router = useRouter();
+
+	
 
 	return (
 		<CacheProvider value={emotionCache}>
@@ -29,13 +41,26 @@ function MyApp({ Component, pageProps }: AppProps)  {
 				<SnackbarProvider anchorOrigin={{ vertical: 'bottom', horizontal: 'center' }} maxSnack={3} dense> 
 					{/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
 					<CssBaseline />
+					
 						<WalletProvider>
 						<SearchProvider>
-							<Layout>
-								<Component {...pageProps} />
-							</Layout>
+						<AnimatePresence exitBeforeEnter onExitComplete={exitCompleter}>
+							<motion.div
+								initial={{ opacity: 0 }}
+								animate={{ opacity: 1 }}
+								className={`app-container`}
+								key={router.route}
+							>
+							
+								<Layout>
+									<Component {...pageProps}/>
+								</Layout>
+								
+							</motion.div>
+						</AnimatePresence>
 						</SearchProvider>
 						</WalletProvider>
+					
 				</SnackbarProvider>
 				
 			</ThemeProvider>
