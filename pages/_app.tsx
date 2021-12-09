@@ -1,4 +1,3 @@
-// import type { AppProps /*, AppContext */ } from 'next/app'
 import Head from 'next/head';
 import { ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -9,9 +8,11 @@ import theme from '../styles/theme';
 import Layout from '@components/layout/Layout';
 import { SnackbarProvider } from 'notistack';
 import { WalletProvider } from '../utils/WalletContext';
+import { AddWalletProvider } from '../utils/AddWalletContext';
 import { SearchProvider } from '../utils/SearchContext';
 import { AnimatePresence, motion } from "framer-motion";
 import { useRouter } from 'next/router';
+import { AppProps } from 'next/app';
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache();
@@ -22,12 +23,12 @@ const exitCompleter = () => {
 	}
 }
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps }: AppProps) {
 
 	const emotionCache = clientSideEmotionCache;
 	const router = useRouter();
 
-	
+
 
 	return (
 		<CacheProvider value={emotionCache}>
@@ -41,7 +42,7 @@ function MyApp({ Component, pageProps }) {
 				<SnackbarProvider anchorOrigin={{ vertical: 'bottom', horizontal: 'center' }} maxSnack={3} dense> 
 					{/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
 					<CssBaseline />
-					
+						<AddWalletProvider>
 						<WalletProvider>
 						<SearchProvider>
 						<AnimatePresence exitBeforeEnter onExitComplete={exitCompleter}>
@@ -60,7 +61,7 @@ function MyApp({ Component, pageProps }) {
 						</AnimatePresence>
 						</SearchProvider>
 						</WalletProvider>
-					
+						</AddWalletProvider>
 				</SnackbarProvider>
 				
 			</ThemeProvider>

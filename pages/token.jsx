@@ -21,16 +21,6 @@ import RelatedLinks from '@components/RelatedLinks/RelatedLinks';
 import theme from '../styles/theme';
 import MuiNextLink from '@components/MuiNextLink'
 
-const boxStyles = {
-    background: 'linear-gradient(rgba(35, 35, 39, 0.3), rgba(29, 29, 32, 0) 300px)',
-    pt: '5rem',
-    pb: '3rem',
-    borderTopColor: 'rgba(46,46,51,1)!important',
-    borderStyle: 'solid',
-    border: 0,
-    borderTop: 1
-}
-
 const relatedLinkList = [
     { 
         id: 0, 
@@ -53,30 +43,35 @@ const relatedLinkList = [
         title: 'Documentation', 
         caption: 'Read more about how ErgoPad Works', 
         icon: 'auto_stories', 
-        href: '/documentation', 
+        href: 'https://github.com/ergo-pad/ergopad/blob/main/docs/README.md', 
         background: theme.palette.tertiary.main
     },
 ]
 
 const tokenAllocation = [
     {
-        x: 'Seed-sale',
-        y: 27,
+        x: 'Seed Round',
+        y: 13,
+        color: '#67D5C2'
+    },
+    {
+        x: 'Strategic Round',
+        y: 25,
         color: '#3abab4'
     },
     {
-        x: 'Pre-sale',
-        y: 54,
+        x: 'Pre-Sale',
+        y: 25,
         color: '#1A6BD2'
     },
     {
-        x: 'Team',
-        y: 8,
+        x: 'Liqudity',
+        y: 6,
         color: '#3F7CDC'
     },
     {
-        x: 'Liqudity',
-        y: 12,
+        x: 'DAO',
+        y: 30,
         color: '#36A9DA'
     },
 ]
@@ -92,19 +87,19 @@ const tokenCards = [
     },
     {
         title: 'Initial Available Supply:',
-        desc: '1.27M'
+        desc: '20M'
     },
     {
         title: 'Market Cap at IDO:',
-        desc: '254k SigUSD'
+        desc: '600k SigUSD'
     },
     {
         title: 'Pre-sale Price:',
-        desc: '0.20 SigUSD'
+        desc: '0.03 SigUSD'
     },
     {
         title: 'Total Available Supply:',
-        desc: '30M'
+        desc: '400M'
     },
 ]
 
@@ -147,16 +142,16 @@ const Token = () => {
                      >
 
                         {tokenCards.map((value) => (
-                            <Grid item md={4} sm={6} xs={12} sx={{ maxWidth: { xs: '320px' }}}>
-                            <Box sx={gridBox}>
-                                <Typography>
-                                    {value.title}
-                                </Typography>
-                                <Typography variant="h3" sx={{ mb: 0 }}>
-                                    {value.desc}
-                                </Typography>
-                            </Box>
-                        </Grid>
+                            <Grid item md={4} sm={6} xs={12} sx={{ maxWidth: { xs: '320px' }}} key={value.title}>
+                                <Box sx={gridBox}>
+                                    <Typography>
+                                        {value.title}
+                                    </Typography>
+                                    <Typography variant="h3" sx={{ mb: 0 }}>
+                                        {value.desc}
+                                    </Typography>
+                                </Box>
+                            </Grid>
                         ))}
 
                     </Grid>
@@ -180,12 +175,7 @@ const Token = () => {
                             id='victory-pie-chart-2'
                             innerRadius={50}
                             data={tokenAllocation}
-                            colorScale={[
-                                '#3abab4',
-                                '#1A6BD2',
-                                '#3F7CDC',
-                                '#36A9DA',
-                            ]}
+                            colorScale={tokenAllocation.map(value => {return value.color})}
                             style={{ labels: { fill: 'white' } }}
                             containerComponent={
                                 <VictoryContainer
@@ -196,13 +186,12 @@ const Token = () => {
                                     }}
                                 />
                             }
-                            
                         />
                     </Grid>
                     <Grid item md={4}>
                         <Box>
                             <List sx={{ color: theme.palette.text.secondary }}>
-                                {tokenAllocation.map((value, i) => (
+                                {tokenAllocation.map((value) => (
                                     <ListItem id={value.x} key={value.x}>
                                         <ListItemIcon>
                                             <Icon sx={{ color: value.color }}>square</Icon>
@@ -299,7 +288,7 @@ const Token = () => {
                         </AccordionSummary>
                         <AccordionDetails>
                         <Typography variant="p">
-                            If you aren't interested in investing in IDOs and feel liquidity farming will provide a greater yield than the current staking rewards, you can provide liquidity on ErgoDex. We may even release a dex of our own!
+                            If you aren&apos;t interested in investing in IDOs and feel liquidity farming will provide a greater yield than the current staking rewards, you can provide liquidity on ErgoDex. We may even release a dex of our own!
                         </Typography>
                         </AccordionDetails>
                     </Accordion>
